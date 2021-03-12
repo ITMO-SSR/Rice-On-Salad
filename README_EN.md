@@ -14,7 +14,29 @@ It's fully Open-Source project with easy repeatability. All details for printing
 ****
 **Desired result:**
 Get the fully controlled and independently oriented tracked platform.
+***
+<details>
+    <summary>Track development Stages</summary>
+    <p>Initial task: to come up with optimal tracks for the robot platform.</p>
+    <p>Basic parameters: track width, distance between the centers of rotation of the tracks. </p>
+    <p>Regarding to the width of the track, everything was quite unambiguous: we take the average ratio of the width of the tracks to the hull for off-road vehicles of the middle weight category, which was 0.67 (the sum of the width of the tracks to the width of the hull, excluding tracks), that is, for a given width of 150 mm, the width of each track was 50 mm.</p>
+    <p>The length of the track was matched to the diameter of the drive wheel, which was greatly helped by the Soviet textbook on calculating tracked chassis. ( "Calculation and design of tracked vehicles NA Nosov Leningrad publishing" Engineering "1972")</p>
+    <p>After defining the parameters, it's time to decide on the gearing.</p>
+    <p>In the first prototype, 2-to-3 lugs were used, but it was decided to abandon this due to the large scale and insufficient resolution of FDM 3D printing.</p>
+    <p>The second prototype was a 1-to-2 lug engagement, which was chosen for further work.</p>
+    <p>In addition, the groove for engaging the drive roller has been redesigned.</p>
+    <p>For the first version, square windows were used, repeating the profile of the tooth in the middle section, which did not provide sufficient engagement of the hooking tooth on the wheel in the track, as well as provided too little engagement contact, which could lead to scrolling and inflation of the caterpillar.</p>
+    <p>For the second prototype, pins sticking out on the sides of the track were chosen, which are placed in the cavity between the teeth of the wheel, which provides contact and good engagement. Thus, version 2 is already a good track due to its lightness, strength, reproducibility on FDM, we hook with wire from 0.8 to 1.2 mm in diameter.</p>
+    <p>For version 3 tracks, 24 version 3 tracks were printed to evaluate connections on a large number of tracks, as well as the flexibility and resilience of the track.</p>
+    <p>Further changes to the track only made minor adjustments. The third prototype is not much different from the second. Two holes were added to the track, which will further allow the track bed to be retrofitted with different lugs, increasing the track's adaptability to different conditions without the need to make a new one.</p>
+    <p>The fourth and final version closed the issue of preventing inflation and optimal interaction with road wheels. Two 1.5mm teeth have been added at 19mm spacing, which when printed from PETG plastic provides sufficient strength to resist lateral loads and accommodate and roll an 18.8mm track roller between them.</p>
 
+![Prototype 1](images/proto-1.jpg)
+![Prototype 2&3](images/proto-2-3.jpg)
+![Prototype 4](images/proto-4.jpg)
+</details>
+
+***
 # Installing ROS on Raspberry PI
 In this article, we will describe the process of installing ROS on a Raspberry Pi, as well as how to connect a robot to your computer.
 
