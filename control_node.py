@@ -29,13 +29,13 @@ def encode(linear, angular):
     left = right = bound(linear)
   elif angular > 0:
     if linear == 0:
-      right = bound(direct_speed)
+      left = bound(direct_speed)
     else:
       left = bound(linear - angular)
       right = bound(linear + angular)
   else:
     if linear == 0:
-      left = bound(direct_speed)
+      right = bound(direct_speed)
     else:
       left = bound(linear + angular)
       right = bound(linear - angular)
@@ -45,7 +45,7 @@ def encode(linear, angular):
 def callback(msg):
   # Linear and angular velocities
   linear_vel = int(msg.linear.x / 0.01)
-  angular_vel = int(msg.angular.z / 0.02)
+  angular_vel = int(msg.angular.z / 0.1)
 
   rospy.loginfo("Received: lin = %f, ang = %f", linear_vel, angular_vel)
 
