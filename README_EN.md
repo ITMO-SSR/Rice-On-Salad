@@ -267,7 +267,7 @@ $ catkin_make
 ```
 As a result, all packages in catkin_workspace will be built and ready to run.
 
-Now let us write a sketch for the Arduino. Connect the Arduino to your computer, open the Arduino IDE and create a sketch there with the content from the [file](sketch_apr09a.ino).
+Now let us write a sketch for the Arduino. Connect the Arduino to your computer, open the Arduino IDE and create a sketch there with the content from the [file](programs/arduino/sketch_keyboard_control.ino).
 
 It remains to test our program. Run the program on the Arduino and connect to the Raspberry Pi via USB. Then, open a second terminal.
 In one of them, type `rosrun control_node control_node.py`- this command will start the node we wrote. In another, type `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`.

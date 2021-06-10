@@ -266,7 +266,7 @@ $ catkin_make
 ```
 В результате все пакеты в catkin_workspace будут собраны и готовы к запуску.
 
-Теперь напишем скетч для Arduino. Подключите Arduino к вашему компьютеру, откройте Arduino IDE и создайте там скетч с содержанием из [этого файла](sketch_apr09a.ino).
+Теперь напишем скетч для Arduino. Подключите Arduino к вашему компьютеру, откройте Arduino IDE и создайте там скетч с содержанием из [этого файла](programs/arduino/sketch_keyboard_control.ino).
 
 Осталось протестировать нашу программу. Запустите программу на Arduino и подключитесь к Raspberry Pi через USB. Затем, откройте второй терминал. 
 В одном из них наберите `rosrun control_node control_node.py` - эта команда запустит написанный нами узел. В другом наберите `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`.
