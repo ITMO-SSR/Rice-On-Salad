@@ -260,7 +260,7 @@ $ cd scripts
 $ nano control_node.py
 ``` 
 This will open the editor.
-Enter the [file](control_node.py) code in it. Note that the `arduino_name` must contain the address you received earlier. After that, run:
+Enter the [file](programs/ros/control_node.py) code in it. Note that the `arduino_name` must contain the address you received earlier. After that, run:
 ```
 $ ~/catkin_ws
 $ catkin_make
