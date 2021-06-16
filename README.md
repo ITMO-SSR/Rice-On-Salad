@@ -332,9 +332,18 @@ void loop() {
 как можно ближе к центру дрона. Мы установили аккумулятор и все управляющие элементы максимально близко к передней части, 
 теперь наша конструкция не переворачивается и максимально эффективно реализует работу гусеничного движителя.
 
-![Layout 1](images/comp-1.jpg)
-![Layout 2](images/comp-2.jpg)
-![Layout 3](images/comp-3.jpg)
+![Progress 1](images/Progress_1.jpg)
+![Progress 2](images/Progress_2.jpg)
+![Progress 3](images/Progress_3.jpg)
+![Progress 4](images/Progress_4.jpg)
+![Progress 5](images/Progress_5.jpg)
+![Progress 6](images/Progress_6.jpg)
+![Model 1](images/model_1.jpg)
+![Model 2](images/model_2.jpg)
+![Progress 7](images/Progress_7.jpg)
+![Progress 8](images/Progress_8.jpg)
+![Progress 9](images/Progress_9.jpg)
+![Progress 10](images/Progress_10.jpg)
 
 ***
 # Управление роботом с клавиатуры
